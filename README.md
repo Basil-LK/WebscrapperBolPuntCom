@@ -16,7 +16,8 @@ node --version
 
 ## Project setup + Launch
 
-Once Node.js has been installed you will need to install the "node modules", this can be done with the following command
+Once Node.js has been installed you will need to install the "node modules", this can be done with the following command.
+(You'll have to do this inside of the project directory)
 
 ```
 npm install
