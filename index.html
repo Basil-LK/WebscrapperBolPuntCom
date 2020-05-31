@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="fname">Insert URL to be scrapped</label>
+    <input type="text" id="fname" name="fname" /><br /><br />
+
+    <button id="submitScrap">Scrap it!</button>
+  </body>
+  <script>
+    $("#submitScrap").click(function (e) {
+      let input = $("#fname").val();
+
+      if (input !== "") {
+        $.ajax({
+          url: "http://192.168.0.214/",
+          method: "POST",
+          data: { input: input },
+        }).done();
+      } else {
+      }
+    });
+  </script>
+</html>
